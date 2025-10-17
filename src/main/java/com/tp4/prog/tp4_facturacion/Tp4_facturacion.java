@@ -4,10 +4,6 @@
 
 package com.tp4.prog.tp4_facturacion;
 
-/**
- *
- * @author mvale
- */
 public class Tp4_facturacion {
 
     public static void main(String[] args) {
