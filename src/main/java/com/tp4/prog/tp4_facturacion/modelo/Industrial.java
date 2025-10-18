@@ -6,8 +6,8 @@ public class Industrial extends Electricidad{
     private double temperaturaMinima;
     private double temperaturaMaxima;
 
-    public Industrial(Long id, double temperaturaMinima, double temperaturaMaxima, String nombre, double precio, int potenciaMaxima) {
-        super(id, nombre, precio, potenciaMaxima);
+    public Industrial( double temperaturaMinima, double temperaturaMaxima, String nombre, double precio, int potenciaMaxima) {
+        super( nombre, precio, potenciaMaxima);
         this.temperaturaMinima = temperaturaMinima;
         this.temperaturaMaxima = temperaturaMaxima;
     }

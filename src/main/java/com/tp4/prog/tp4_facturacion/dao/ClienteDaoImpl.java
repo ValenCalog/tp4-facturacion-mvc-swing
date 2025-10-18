@@ -45,12 +45,15 @@ public class ClienteDaoImpl implements IClienteDao{
     @Override
     public void editarCliente(Cliente cliente) {
         Cliente clienteAEditar = buscarPorId(cliente.getId());
-        clienteAEditar.setNombre(cliente.getNombre());
-        clienteAEditar.setApellido(cliente.getApellido());
-        clienteAEditar.setTelefono(cliente.getTelefono());
-        clienteAEditar.setDireccion(cliente.getDireccion());
-        //el dni consideramos que no se puede editar
-        System.out.println("Se ha actualizado correctamente el cliente con id " + cliente.getId());
+        if (clienteAEditar != null){
+            clienteAEditar.setNombre(cliente.getNombre());
+            clienteAEditar.setApellido(cliente.getApellido());
+            clienteAEditar.setTelefono(cliente.getTelefono());
+            clienteAEditar.setDireccion(cliente.getDireccion());
+            //el dni consideramos que no se puede editar
+            System.out.println("Se ha actualizado correctamente el cliente con id " + cliente.getId());
+        
+        }
     }
 
     @Override

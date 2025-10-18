@@ -1,10 +1,13 @@
 
 package com.tp4.prog.tp4_facturacion.modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class Cliente {
+    
+    private Long id;
     private String nombre;
     private String apellido;
     private String dni;
@@ -14,16 +17,26 @@ public class Cliente {
 
     public Cliente() {
     }
+    
+    
 
-    public Cliente(String nombre, String apellido, String dni, String direccion, String telefono, List<Factura> facturas) {
+    public Cliente(String nombre, String apellido, String dni, String direccion, String telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.facturas = facturas;
+        this.facturas = new ArrayList<>();
     }
-    
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getNombre() {
         return nombre;
     }

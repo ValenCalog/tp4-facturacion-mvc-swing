@@ -10,8 +10,7 @@ public class Articulo {
     public Articulo() {
     }
     
-    public Articulo(Long id, String nombre, double precio) {
-        this.id = id;
+    public Articulo(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;
     }

@@ -7,6 +7,12 @@ package com.tp4.prog.tp4_facturacion;
 public class Tp4_facturacion {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        /**
+        IClienteDao clienteDao = new ClienteDaoImpl();
+        VistaCliente vistaCliente = new VistaCliente();
+        ControladorCliente controlador = new ControladorCliente(clienteDao, vistaCliente);
+        * **/
+
     }
 }
