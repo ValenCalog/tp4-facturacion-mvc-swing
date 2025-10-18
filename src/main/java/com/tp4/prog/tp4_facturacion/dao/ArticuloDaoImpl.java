@@ -34,11 +34,7 @@ public class ArticuloDaoImpl implements IArticuloDao{
 
     @Override
     public void editarArticulo(Articulo articulo) {
-        Articulo articuloAEditar = buscarPorId(articulo.getId());
-        if (articuloAEditar != null){
-            articuloAEditar.setNombre(articulo.getNombre());
-            articuloAEditar.setPrecio(articulo.getPrecio());
-        } 
+        //lo dejo vacio porque ya se esta editando en el controlador, cuando pongamos persistencia acá actualizariamos la base de datos con el entityManager
     }
 
     @Override
